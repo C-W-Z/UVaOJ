@@ -10,9 +10,9 @@ if "%~1"=="" (
 set FILENAME=%~n1
 set EXE_NAME=%~n1
 
-echo Compile: g++ %FILENAME%.cpp -o %EXE_NAME% -Wall -std=c++11
+echo Compile: g++ %FILENAME%.cpp -o %EXE_NAME% -Wall -std=c++11 -O2
 
-g++ %FILENAME%.cpp -o %EXE_NAME% -Wall -std=c++11
+g++ %FILENAME%.cpp -o %EXE_NAME% -Wall -std=c++11 -O2
 
 if %errorlevel% neq 0 (
     echo Compilation failed.
